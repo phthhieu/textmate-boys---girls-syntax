@@ -1,0 +1,128 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(77, 215, 252, 0.1);
+}
+
+.comment {
+  color: #404040;
+  background-color: rgba(9, 10, 15, 0.98);
+}
+
+.string {
+  color: #00D8FF;
+}
+
+.constant.numeric {
+  color: #E62286;
+}
+
+.constant.language {
+}
+
+.constant.character, .constant.other {
+  color: #00D8FF;
+}
+
+.variable.language, .variable.other {
+  font-weight: bold;
+  color: #E62286;
+}
+
+.keyword {
+}
+
+.storage {
+}
+
+.entity.other.inherited-class {
+}
+
+.entity.name.type.module.ruby, .entity.name.type.class.ruby {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.entity.name.function {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.variable.parameter {
+  font-weight: bold;
+  color: #E62286;
+}
+
+.entity.name.tag {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.entity.other.attribute-name {
+  font-weight: bold;
+  color: #E62286;
+}
+
+.support.function {
+}
+
+.support.constant {
+}
+
+.support.type, .support.class {
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: #FF0C00;
+}
